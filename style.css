@@ -1,6 +1,6 @@
   body {
-       background: rgb(237, 207, 247);
-       color: rgb(86, 147, 238);
+       background: rgb(255, 191, 255);
+       color: rgb(0, 0, 0);
        padding: 10px;
        font-family: arial;
    }
@@ -11,7 +11,7 @@
 
    /* navigation menu */
    nav {
-       background: rgb(198, 227, 255);
+       background: rgb(207, 241, 255);
       margin: 0 auto;
        display: flex;
        padding: 10px;
@@ -37,7 +37,7 @@
 
    /* main container area beneath menu */
    main {
-       background: rgb(255, 251, 240);
+       background: rgb(255, 249, 234);
        display: flex;
    }
    .sidebar {
@@ -54,9 +54,65 @@
 
    /* portfolio styles */
    #interests {
-       border: 4px silver ridge;
+       border: 4px rgb(156, 120, 255) ridge;
        padding: 8px;
    }
    h2, h3 {
        margin: 0px;
    }
+<html>
+    <head> <title>_____________</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <div id="all-contents">
+        <nav>
+          <h1>_____________</h1>
+            <ul id="nav-ul">
+              <li class="nav-li">
+               <a class="nav-a" href="index.html">Home</a>
+              </li>
+              <li class="nav-li">
+               <a class="nav-a" href="portfolio.html">Portfolio</a>
+              </li>
+            </ul>
+        </nav>
+        <main>
+          <div class="content">
+            <h1>Portfolio</h1>
+            <ul id="portfolio">
+              <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+              <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+              <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes</a></li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </body>
+</html>
+/* portfolio styles */
+         .content h1 {
+             color: black;
+         }
+
+         #portfolio {
+             list-style-type: none;
+             padding-left: 0;
+         }
+
+         #portfolio li {
+             background: #ffdeef;
+             padding: 10px;
+             border-radius: 10px;
+             margin-bottom: 10px;
+         }
+
+         #portfolio li:hover {
+             background: #b9c0fc;
+         }
+
+         #portfolio a {
+             text-decoration: none;
+             color: #000000;
+         }
