@@ -82,12 +82,17 @@ var speed = 10;
          */
         function update() { 
           moveBoxTo(200); 
-positionX = positionX + 10;
+positionX = positionX + speed;
 moveBoxTo(positionX);
-  positionX = positionX + speed;      
+if (positionX > boardWidth){
+speed = speed * -1;
+}
+ 
 
-          
-        }
+
+
+}
+
 
         /**
          * This Function will be called each time the box is clicked.
