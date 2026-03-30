@@ -59,6 +59,11 @@ drawCircle()
         function update() {
             // TODO 4 : Update the position of each circle using physikz.updatePosition()
 
+            physikz.updatePosition(circle[0])
+            physikz.updatePosition(circle[1])
+            physikz.updatePosition(circle[2])
+            physikz.updatePosition(circle[3])
+            physikz.updatePosition(circle[4])
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            
