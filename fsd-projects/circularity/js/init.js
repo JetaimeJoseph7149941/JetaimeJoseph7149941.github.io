@@ -61,11 +61,7 @@ for (var loopsCompleted = 0; loopsCompleted < 175; loopsCompleted++) {
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            
-            game.checkCirclePosition(circle[0])
-            game.checkCirclePosition(circle[1])
-            game.checkCirclePosition(circle[2])
-            game.checkCirclePosition(circle[3])
-            game.checkCirclePosition(circle[4])
+            
 
             // TODO 8 / TODO 9 : Iterate over the array
            
@@ -73,6 +69,10 @@ for (var loopsCompleted = 0; loopsCompleted < 175; loopsCompleted++) {
                 physikz.updatePosition(circles[i]);
             }
             
+            for( var i = 0; i < circles.length; i++){
+                physikz.updatePosition(circles[i]); 
+                game.checkCirclePosition(circles[i])
+            }
         }
     
         /* 
